@@ -12,5 +12,18 @@
   "license": "ISC",
   "devDependencies": {
     "lite-server": "^2.6.1"
-  }
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.12.9"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThuanLeUwU/ex5-ass1.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ThuanLeUwU/ex5-ass1/issues"
+  },
+  "homepage": "https://github.com/ThuanLeUwU/ex5-ass1#readme"
 }
