@@ -50,3 +50,16 @@
     padding: 50px 0px 0px 0px;
     z-index: 0;
 }
+
+.carousel{
+    background-color: #512da8;
+}
+
+.carousel-item{
+    height: 900px;
+}
+
+.carousel-item img{
+    min-height: 100%;
+    margin: auto;
+}
