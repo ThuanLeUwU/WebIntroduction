@@ -34,11 +34,52 @@
                                 class="fa fa-address-card fa-lg"></span> Contact</a></li>
                 </ul>
             </div>
+            <button type="button" data-toggle="modal" data-target="#loginModal">Login</button>
+        </div>
+        
+        <div id="loginModal" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg" role="content">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Login</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+                            <div class="form-row">
+                                <div class="form-group col-sm-4">
+                                    <label for="exampleInputEmail3" class="sr-only">Email address</label>
+                                    <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail3"
+                                        placeholder="Enter email">
+                                </div>
+                                <div class="form-group col-sm-4">
+                                    <label for="exampleInputPassword3" class="sr-only">Password</label>
+                                    <input type="password" class="form-control form-control-sm mr-1"
+                                        id="exampleInputPassword3" placeholder="Password">
+                                </div>
+                                <div class="col-sm-auto">
+                                    <div class="form-check">
+                                    <input type="checkbox" class="form-check-input">
+                                    <label class="form-check-label">Remember me</label>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="form-row"> 
+                                <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">cancel</button>
+                                <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
     </nav>
+
+    
+
     <header class="jumbotron">
         <div class="container">
-            <div class="">
+            <div class="row">
                 <div class="col-12 col-sm-6">
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our
@@ -47,16 +88,21 @@
                 <div class="col-12 col-sm align-self-center">
                     <img src="img/logo.png" class="img-fluid">
                 </div>
+                <div class="col-12 col-sm-auto">
+                    <a role="button" class="btn btn-block nav-link btn-warning" data-toggle="tooltip" data-html="true"
+            title="Or Call us at <br><strong>+852 12345678</strong>" data-placement="bottom" href="#reserveform">Reserve
+            Table</a>
+                </div>
             </div>
         </div>
+        
+        <script>
+            $(document).ready(function () {
+                $('[data-toggle="tooltip"]').tooltip();
+            });
+        </script>
     </header>
-<<<<<<< HEAD
-    
-=======
-    <ol class="col-12 breadcrumb">
-        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-    </ol>
->>>>>>> 2fac9e66ebff225e15925624ce31e6b176bdab02
+
     <div class="container">
         <ol class="col-12 breadcrumb">
             <li class="breadcrumb-item"><a href="index.html">Home</a></li>
@@ -67,15 +113,12 @@
             </div>
             <div class="col col-sm order-sm-first col-md">
                 <div class="media">
-                    <img class="d-flex mr-3 img-thumbmail align-self-center" src="img/uthappizza.png"
-                        alt="Uthappizza">
+                    <img class="d-flex mr-3 img-thumbmail align-self-center" src="img/uthappizza.png" alt="Uthappizza">
                     <div class="media-body">
-<<<<<<< HEAD
-                        <h2 class="mt-0">Uthappizza <span class="badge badge-danger">HOT</span><span class="badge badge-pill badge-secondary">$4.99</span></h2>
-=======
-                        <h2 class="mt-0">Uthappizza</h2>
->>>>>>> 2fac9e66ebff225e15925624ce31e6b176bdab02
-                        <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola
+                        <h2 class="mt-0">Uthappizza <span class="badge badge-danger">HOT</span><span
+                                class="badge badge-pill badge-secondary">$4.99</span></h2>
+                        <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and Italian
+                            pizza, topped with Cerignola
                             olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
                     </div>
                 </div>
@@ -106,7 +149,8 @@
                     <div class="media-body">
                         <h2 class="mt-0">Alberto Somayya</h2>
                         <h4>Executive chef</h4>
-                        <p class="d-none d-sm-block">Award winning three-star Michelin chef with wide International experience having worked closely with
+                        <p class="d-none d-sm-block">Award winning three-star Michelin chef with wide International
+                            experience having worked closely with
                             whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion
                             experiences.</p>
                     </div>
