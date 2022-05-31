@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/mystyle.css">
+    <!-- <link rel="stylesheet" href="css/mystyle.css"> -->
+    <link rel="stylesheet" href="style.css">
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -182,14 +183,14 @@
         // });
 
         $("#carouselButton").click(function(){
-            if ($("#carouselButton").children("span").hasClass('fa-pause')){
-                $("#myCarousel").carousel('pause');
-                $("#carouselButton").children("span").removeClass('fa-pause');
-                $("#carouselButton").children("span").addClass('fa-play');
-            } else if ($("#carouselButton").children("span").hasClass('fa-play')) {
-                $("#myCarousel").carousel('cycle');
-                $("#carouselButton").children("span").removeClass('fa-play');
-                $("#carouselButton").children("span").addClass('fa-pause');
+            if ($("#carouselButton").children("span").hasClass("fa-pause")){
+                $("#myCarousel").carousel("pause");
+                $("#carouselButton").children("span").removeClass("fa-pause");
+                $("#carouselButton").children("span").addClass("fa-play");
+            } else if ($("#carouselButton").children("span").hasClass("fa-play")) {
+                $("#myCarousel").carousel("cycle");
+                $("#carouselButton").children("span").removeClass("fa-play");
+                $("#carouselButton").children("span").addClass("fa-pause");
             }
         });
     </script>
